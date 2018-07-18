@@ -1,0 +1,340 @@
+[ 2017-09-24T21:31:14+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-09-24T21:46:23+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-09-24T21:54:06+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0140s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2016-03-05%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0120s ]
+
+[ 2017-09-24T21:54:26+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T21:56:36+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T21:56:51+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T21:58:31+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0090s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0090s ]
+
+[ 2017-09-24T21:58:52+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T21:59:55+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0090s ]
+
+[ 2017-09-24T22:01:31+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:04:30+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:07:07+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:08:18+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:08:51+08:00 ] 10.147.244.240 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:09:35+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:11:58+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0150s ]
+
+[ 2017-09-24T22:20:04+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:20:18+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-20%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:22:01+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%学院%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:22:20+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0080s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0090s ]
+
+[ 2017-09-24T22:22:33+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:23:14+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0710s ]
+
+[ 2017-09-24T22:23:59+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:24:09+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:24:17+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:28:14+08:00 ] 10.147.244.240 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:39:47+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0140s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0160s ]
+
+[ 2017-09-24T22:40:07+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%澳门%' AND `post_keywords` LIKE '%澳门%' AND `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:40:51+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%澳门%' AND `post_keywords` LIKE '%澳门%' AND `post_date` LIKE '%2017-06-07%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0150s ]
+
+[ 2017-09-24T22:41:04+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:41:51+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:42:21+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:42:57+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+
+[ 2017-09-24T22:43:04+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:43:23+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%研究生%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0160s ]
+
+[ 2017-09-24T22:43:31+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%研究生%' AND `post_keywords` LIKE '%研究生%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:46:03+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0150s ]
+
+[ 2017-09-24T22:46:11+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0080s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0090s ]
+
+[ 2017-09-24T22:46:22+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0150s ]
+
+[ 2017-09-24T22:46:26+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0650s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0130s ]
+
+[ 2017-09-24T22:46:48+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `post_date` LIKE '%2017-06-14%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0110s ]
+
+[ 2017-09-24T23:47:00+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%是是%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0700s ]
+
+[ 2017-09-24T23:47:44+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id`,`post_keywords` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%人才%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc  [ RunTime:0.0140s ]
+

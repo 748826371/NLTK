@@ -1,0 +1,8 @@
+
+	<div ng-controller="listController">
+		<ul>
+			<li ng-repeat="i in newsList.list"><a href="" ui-sref="detailTest({id : i.tid})">{{i.post_title}}</a></li>
+		</ul>
+		<h1>同类</h1>
+		<h2 ng-repeat="v in newsList.Siblings"><a href="" ui-sref="listtest({id: v.term_id})">{{v.name}}</a></h2>
+	</div>

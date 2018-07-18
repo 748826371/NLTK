@@ -1,0 +1,31 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+	<div class="common-form">
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('update')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">名称</label>
+					<div class="controls">
+						<input type="text" name="coll_name" value="{$one['coll_name']}">
+					</div>
+					<label class="control-label">URL</label>
+					<div class="controls">
+						<input type="text" name="coll_url" value="{$one['coll_url']}">
+					</div>
+					<label class="control-label">排名</label>
+					<div class="controls">
+						<input type="text" name="coll_order" value="{$one['coll_order']}">
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="coll_id" value="{$one['coll_id']}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">保存</button>
+				<a class="btn" href="{:U('index')}">返回</a>
+			</div>
+			</form>
+		</div>
+	</div>
+	<script src="/public/js/common.js"></script>

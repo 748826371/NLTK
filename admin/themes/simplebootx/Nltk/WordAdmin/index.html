@@ -1,0 +1,33 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('index')}">标签库列表</a></li>
+			<li><a href="{:U('addSimilar')}">添加近义词</a></li>
+			<li><a href="{:U('participle')}">开始分词！</a></li>
+		</ul>
+		<table class="table table-hover table-bordered table-list text-center">
+			<thead>
+				<tr>
+					<th width="50">ID</th>
+					<th>标签名</th>
+					<th>权重(出现的次数)</th>
+					<th>近义词</th>
+					<th width="180">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="list" item="vo">
+				<tr>
+					<td>{$vo.tab_id}</td>
+					<td>{$vo.tab_name}</td>
+					<td>{$vo.tab_weight}</td>
+					<td>{$vo.tab_id|getChildById}</td>
+					<td><a href="{:U('addSimilar', ['tab_id'=>$vo['tab_id']])}">添加近义词</a></td>
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>		
+	</div>

@@ -1,0 +1,57 @@
+<tc_include file="Public:head"/>
+	<!-- 轮播图开始 -->
+<php>
+$home_slides=sp_getslide("portal_index");
+$home_slides=empty($home_slides)?$default_home_slides:$home_slides;
+</php>
+<ul id="homeslider" style="margin:0; padding:0">
+	<foreach name="home_slides" item="vo">
+	<li>
+		<div class="caption-wraper">
+			<!-- <div class="caption">{$vo.slide_name}</div> -->
+		</div>
+		<a href="{$vo.slide_url}"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt=""></a>
+	</li>
+	</foreach>
+</ul>
+	<!-- 轮播图结束 -->
+	<!-- 主体内容开始 -->
+	<div class="container">
+		<?php foreach ($portal_index_news as $key => $value) { ?>
+		<div class="col-md-6">
+			<?php
+			$wdnews=sp_sql_posts("cid:$value;field:post_title,tid,post_date;order:listorder asc;limit:6;");
+			?>
+			<div class="panel panel-default">
+				<div class="panel-heading">{$key}<a href="{:U('list/index', ['id'=>5])}"><small class="pull-right">查看更多</small></a>
+				</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<foreach name="wdnews" item="vo">
+							<li class="list-group-item">
+							<a href="{:U('article/index', array('id'=>$vo['tid']))}">{:msubstr($vo['post_title'],0,15)}</a>
+						 </li>
+						</foreach>
+					 </ul>					
+				</div>
+			</div>
+		</div>
+		<?php } ?>	
+	</div>
+	<!-- 主体内容结束 -->
+<tc_include file="Public:footer"/>	
+<script src="__TMPL__Public/js/slippry.min.js"></script>
+<script>
+$(function() {
+	var demo1 = $("#homeslider").slippry({
+		transition: 'fade',
+		useCSS: true,
+		captions: false,
+		speed: 1000,
+		pause: 3000,
+		auto: true,
+		preload: 'visible'
+	});
+});
+</script>
+</html>

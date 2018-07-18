@@ -1,0 +1,8 @@
+[ 2017-09-08T08:38:06+08:00 ] ::1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `nltk_users` [ RunTime:3.1282s ]
+SQL: SELECT * FROM `nltk_users` WHERE `user_login` = 'watcher2' LIMIT 1   [ RunTime:0.5810s ]
+

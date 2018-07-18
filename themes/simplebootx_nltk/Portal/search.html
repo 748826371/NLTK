@@ -1,0 +1,25 @@
+<tc_include file="Public:head"/>
+<div class="container">
+	<div class="panel">
+		<div class="panel-heading">
+			<php>
+				$result=sp_sql_posts_paged_bykeyword($keyword,"",20);
+			</php>
+			<h3>'{$keyword}' 的搜索结果 </h3>
+			<p>{$result['count']}条结果</p>
+		</div>
+		<div class="panel-body">
+			<ul class="list-group">
+				<volist name="result['posts']" id="vo">
+					<li class="list-group-item"><a href="{:leuu('article/index',array('id'=>$vo['tid']))}">{$vo.post_title}</a></li>
+				</volist>
+			</ul>
+			<div class="pagination">
+				<ul>
+					{$result['page']}
+				</ul>
+			</div>
+		</div>	
+	</div>
+</div>
+					

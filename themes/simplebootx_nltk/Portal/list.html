@@ -1,0 +1,71 @@
+<tc_include file="Public:head"/>
+	<!-- 面包屑开始 -->
+	<?php 
+		 $data = sp_get_breadcrumb(I('get.id'));
+		// var_dump($data);exit;
+	 ?>
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="./">首页</a></li>
+			<foreach name="data" item="vo">
+				<li><a href="{:U('list/index', ['id'=>$vo['term_id']])}">{$vo['name']}</a></li>
+			</foreach>
+		</ol>	
+	</div>	
+	<!-- 面包屑结束 -->
+	<!-- 主体开始 -->
+	<div class="container">
+		<div class="row">
+			<!-- 左侧列表显示开始 -->
+			<div class="col-md-3">
+				<?php
+					$terms = sp_get_term(I('get.id'));
+					$pid = $terms['parent'];
+					$childs = sp_get_child_terms($pid);
+				?>
+				<div class="panel panel-primary text-center">
+					 <ul class="list-group">
+					 	<foreach name="childs" item="vo">
+					 		<li class="list-group-item ">
+								<a href="{:U('list/index', ['id'=>$vo['term_id']])}">{$vo['name']}</a>
+						 	</li>
+					 	</foreach>
+					 </ul>
+				</div>				
+			</div>
+			<!-- 左侧列表显示结束 -->
+			<!-- 右侧列表显示开始 -->
+			<div class="col-md-9">
+				 <div class="panel panel-default">
+					<div class="panel-heading">{$name}</div>
+					<div class="panel-body">
+						 <ul class="list-group">
+						 	<?php $posts =  sp_sql_posts_paged_bycatid(I('get.id'), "field:post_title,post_date,object_id,tid;order:post_date desc,listorder desc;", 15);
+						 		$post = $posts['posts'];
+						 		$page = $posts['page'];
+						 	?>
+						 	<if condition="$post" >
+								<foreach name="post" item="vo">
+									<li class="list-group-item">
+										<a href="{:U('article/index', ['id'=>$vo['tid']])}"><span class="glyphicon glyphicon-list-alt">{:msubstr($vo['post_title'],0,20)}</span><small class="pull-right">{$vo['post_date']}</small></a>
+									 </li>
+								</foreach>
+						 	</if>
+							<if condition="!$post" >
+								无新闻
+							</if>
+						 </ul>						
+					</div>
+				</div>	
+			<!-- 分页开始 -->
+			<ul class="pagination">
+				{$page}
+			</ul>			
+			<!-- 分页结束 -->				
+			</div>
+			<!-- 右侧列表显示结束 -->
+
+		</div>
+	</div>
+	<!-- 主体结束 -->
+<tc_include file="Public:footer"/>

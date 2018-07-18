@@ -1,0 +1,81 @@
+<tc_include file="Public:head"/>
+	<!-- 面包屑开始 -->
+	<?php 
+		 $data = sp_get_breadcrumb($term['term_id']);
+		// var_dump($data);exit;
+	 ?>
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="./">首页</a></li>
+			<foreach name="data" item="vo">
+				<li><a href="{:U('list/index', ['id'=>$vo['term_id']])}">{$vo['name']}</a></li>
+			</foreach>
+		</ol>	
+	</div>	
+	<!-- 面包屑结束 -->
+	<!-- 主体开始 -->
+	<div class="container">
+		<div class="row">
+			<!-- 左侧列表显示开始 -->
+			<div class="col-md-3">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading panel-info">本篇文章关键字</div>
+					<div class="panel-body panel-primary">
+						{$post_keywords}
+					</div>
+				</div>
+				<div class="panel panel-default text-center">
+					<div class="panel-heading panel-info">相关文章推荐</div>
+	        		<php>
+	        			$keywords = explode(' ', $post_keywords);
+	        			$keywords = $keywords[0];
+	        			$condition = [];
+	        			$condition['post_keywords'] = ['like', '%'.$keywords.'%'];
+						$hot_articles=sp_sql_posts("field:post_title,tid,term_id;order:post_hits desc;limit:5;", $condition); 
+					</php>
+		        	<ul class="list-group">
+		        		<foreach name="hot_articles" item="vo">		        			
+							<li class="list-group-item"><a title="{$vo.post_title}" href="{:leuu('article/index',array('id'=>$vo['tid'],'cid'=>$vo['term_id']))}">{:msubstr($vo['post_title'], 0, 10)}</a></li>
+						</foreach>
+					</ul>
+				</div>
+				<div class="panel panel-default text-center">
+					<div class="panel-heading panel-info">原文章链接</div>
+					<div class="panel-body panel-primary">
+						<?php if(!empty($post_url)): ?>
+							<a href="{post_url}" title"点击访问" target="_blank">{$post_url}</a>
+						<?php endif ?>
+					</div>
+				</div>				
+			</div>
+			<!-- 左侧列表显示结束 -->
+			<!-- 右侧列表显示开始 -->
+			<div class="col-md-9">
+				 <div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>{$post_title}</h4>
+						<span>{$post_date}发布  {$post_hits}阅读量 </span>
+					</div>
+					<div class="panel-body">
+		    			{$post_content}		    	
+		    		
+						<if condition="!empty($post_source)">
+		                    <div>
+		                        <b>注：本文转载自{$post_source}，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责。如有侵权行为，请联系我们，我们会及时删除。</b>
+		                    </div>
+	    				</if>
+	    				<if condition="!empty($prev)">
+						<a href="{:leuu('article/index',array('id'=>$prev['tid'],'cid'=>$prev['term_id']))}" class="btn btn-primary pull-left">上一篇</a>
+						</if>
+						<if condition="!empty($next)">
+						<a href="{:leuu('article/index',array('id'=>$next['tid'],'cid'=>$next['term_id']))}" class="btn btn-warning pull-right">下一篇</a>
+						</if>
+					</div>
+				</div>			
+			</div>
+			<!-- 右侧列表显示结束 -->
+
+		</div>
+	</div>
+	<!-- 主体结束 -->
+<tc_include file="Public:footer"/>

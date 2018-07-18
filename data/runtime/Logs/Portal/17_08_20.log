@@ -1,0 +1,860 @@
+[ 2017-08-20T10:41:22+08:00 ] ::1 /index.php?g=&m=Search&a=dotest
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND `post_keywords` LIKE '%讲座%' LIMIT 1   [ RunTime:0.1050s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND `post_keywords` LIKE '%讲座%' ORDER BY post_date LIMIT 0,20   [ RunTime:0.0200s ]
+
+[ 2017-08-20T10:41:52+08:00 ] ::1 /index.php?g=&m=Search&a=dotest
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0704s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND `post_keywords` LIKE '%测试%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND `post_keywords` LIKE '%测试%' ORDER BY post_date LIMIT 0,20   [ RunTime:0.0156s ]
+
+[ 2017-08-20T11:22:08+08:00 ] ::1 /index.php?g=portal&m=search&a=nltkSearch
+ERR: 1054:Unknown column 'post_keywprds' in 'where clause'
+ [ SQL语句 ] : SELECT `object_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywprds` LIKE '%讲座%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date 
+
+[ 2017-08-20T11:43:21+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T11:44:13+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T11:44:55+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T11:45:26+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0200s ]
+
+[ 2017-08-20T11:45:52+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-20T11:46:51+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-08-20T11:47:16+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-08-20T11:48:15+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+
+[ 2017-08-20T11:49:02+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-08-20T11:49:15+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-08-20T11:49:24+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+
+[ 2017-08-20T11:49:50+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-08-20T11:51:35+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%0是%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%0是%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0180s ]
+
+[ 2017-08-20T11:51:43+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-20T11:51:48+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-20T11:51:50+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-20T11:52:27+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%0撒%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%0撒%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0160s ]
+
+[ 2017-08-20T11:52:52+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0180s ]
+
+[ 2017-08-20T11:53:08+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%讲座%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%讲座%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0190s ]
+
+[ 2017-08-20T11:53:18+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%乐趣%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%乐趣%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0160s ]
+
+[ 2017-08-20T11:55:28+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%乐趣%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%乐趣%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T11:55:41+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` =' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` =' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T11:55:43+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` =' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` =' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %乐趣% and post_keywords like %keyword% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T11:56:37+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %农村% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %农村% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T11:57:35+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0180s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMI' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMI' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T11:57:44+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMI' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMI' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %农村% and post_keywords like %% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T11:58:10+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0190s ]
+
+[ 2017-08-20T12:01:01+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0200s ]
+
+[ 2017-08-20T12:01:10+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0160s ]
+
+[ 2017-08-20T12:01:12+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:01:23+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%实践%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%实践%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:01:30+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%实践% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %实践% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%实践% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %实践% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:01:43+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%实践% and post_keywords like %讲座% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %实践% and post_keywords like %讲座% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%实践% and post_keywords like %讲座% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %实践% and post_keywords like %讲座% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:01:48+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%讲座%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%讲座%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:03:47+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0180s ]
+
+[ 2017-08-20T12:03:53+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:03:59+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%研究%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%研究%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0160s ]
+
+[ 2017-08-20T12:04:06+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status`' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status`' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:04:10+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status`' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status`' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %研究% and post_keywords like %研究生% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:05:02+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+
+[ 2017-08-20T12:05:09+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2017-08-20T12:06:07+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-08-20T12:06:52+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-08-20T12:07:05+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-08-20T12:07:11+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-08-20T12:07:29+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%调查% and post_keywords like %农村% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %调查% and post_keywords like %农村% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%调查% and post_keywords like %农村% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %调查% and post_keywords like %农村% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:08:37+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'调查'% and post_keywords like %'农村'% ) AND `status` = 1 AND `post_status' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %'调查'% and post_keywords like %'农村'% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'调查'% and post_keywords like %'农村'% ) AND `status` = 1 AND `post_status' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %'调查'% and post_keywords like %'农村'% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:09:23+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-08-20T12:09:36+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%调查% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %调查% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%调查% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = ' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE ( post_title like %调查% and post_keywords like %调研% ) AND `status` = 1 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-08-20T12:10:42+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:10:50+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调查%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:10:59+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+
+[ 2017-08-20T12:13:23+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%调查% and post_keywords like %调研% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_title like %调查% and post_keywords like %调研% ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%调查% and post_keywords like %调研% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_title like %调查% and post_keywords like %调研% ) LIMIT 1  
+
+[ 2017-08-20T14:49:13+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:3.5892s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% AND post_keywords like %调研% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_title like %农村% AND post_keywords like %调研% ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% AND post_keywords like %调研% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_title like %农村% AND post_keywords like %调研% ) LIMIT 1  
+
+[ 2017-08-20T14:49:14+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% AND post_keywords like %调研% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_title like %农村% AND post_keywords like %调研% ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%农村% AND post_keywords like %调研% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_title like %农村% AND post_keywords like %调研% ) LIMIT 1  
+
+[ 2017-08-20T14:52:35+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.7040s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0670s ]
+
+[ 2017-08-20T14:52:46+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0220s ]
+
+[ 2017-08-20T14:59:18+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%讲座% and post_title like %实践% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_keywords like %讲座% and post_title like %实践% ) LIMIT 1  
+
+[ 2017-08-20T15:02:33+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%讲座% and post_title like %实践% ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `status` = 1 AND `post_status` = 1 AND ( post_keywords like %讲座% and post_title like %实践% ) LIMIT 1  
+
+[ 2017-08-20T15:08:18+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0220s ]
+
+[ 2017-08-20T15:08:26+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%dioaya%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%dioaya%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0200s ]
+
+[ 2017-08-20T15:08:41+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0210s ]
+
+[ 2017-08-20T15:08:52+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%讲座%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%讲座%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0190s ]
+
+[ 2017-08-20T15:09:33+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%讲座%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%讲座%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0240s ]
+
+[ 2017-08-20T15:09:40+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0180s ]
+
+[ 2017-08-20T15:10:34+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND (  `post_title` LIKE '%农村%' ) AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0220s ]
+
+[ 2017-08-20T15:13:31+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:14:31+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%农村%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0240s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:15:28+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:17:06+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0180s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:17:37+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0200s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:18:58+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:20:02+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0240s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:21:04+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0240s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:21:47+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:23:10+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0180s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:24:15+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0160s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:24:18+08:00 ] ::1 /index.php?g=Portal&m=Search&a=nltkSearch&p=2
+ERR: 模板不存在:themes/simplebootx_nltk/Portal/nltkSearch.html
+
+[ 2017-08-20T15:24:56+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0220s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:27:54+08:00 ] ::1 /index.php?g=&m=Page&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-08-20T15:30:47+08:00 ] ::1 /index.php?g=Portal&m=Search&a=nltkSearch&p=6
+ERR: 模板不存在:themes/simplebootx_nltk/Portal/nltkSearch.html
+
+[ 2017-08-20T15:30:54+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: pList F:\NLTK\simplewind\Lib\Util\Page.class.php 第 226 行.
+NOTIC: [8] Undefined variable: pListStart F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pListEnd F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pFirst F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+NOTIC: [8] Undefined variable: pPrev F:\NLTK\simplewind\Lib\Util\Page.class.php 第 335 行.
+
+[ 2017-08-20T15:35:17+08:00 ] ::1 /index.php?g=&m=Page&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+
+[ 2017-08-20T15:35:27+08:00 ] ::1 /index.php?g=&m=Search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0180s ]
+
+[ 2017-08-20T15:47:56+08:00 ] ::1 /index.php?m=page&a=index&id=630
+ERR: 模板不存在:themes/simplebootx_nltk/Portal/404.html
+
+[ 2017-08-20T15:49:08+08:00 ] ::1 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-08-20T15:49:12+08:00 ] ::1 /index.php?g=&m=AdminPage&a=edit&id=630
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-08-20T15:49:47+08:00 ] ::1 /index.php?g=Portal&m=AdminPage&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `nltk_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `nltk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+SQL: SHOW COLUMNS FROM `nltk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `nltk_terms` [ RunTime:0.0150s ]
+SQL: UPDATE `nltk_posts` SET `post_title`='自主检索',`post_keywords`='',`post_excerpt`='',`post_modified`='2017-08-18 18:57:42',`post_status`='1',`post_content`='<p>search<br/></p>',`smeta`='{\"template\":\"nltkSearch\",\"thumb\":\"\"}' WHERE `id` = '630' [ RunTime:0.0000s ]
+
+[ 2017-08-20T15:49:55+08:00 ] ::1 /index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-08-20T15:50:04+08:00 ] ::1 /index.php?g=&m=Page&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-08-20T15:50:18+08:00 ] ::1 /index.php?g=&m=Page&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-08-20T15:50:58+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_keywords` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0190s ]
+
+[ 2017-08-20T21:26:38+08:00 ] ::1 /index.php?g=&m=search&a=nltkSearch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `nltk_term_relationships` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 LIMIT 1   [ RunTime:0.1020s ]
+SQL: SELECT `post_date`,`post_title`,`object_id`,`tid`,`term_id` FROM nltk_term_relationships a INNER JOIN nltk_posts as b on a.object_id =b.id INNER JOIN nltk_users as c on b.post_author = c.id  WHERE `post_title` LIKE '%调研%' AND `status` = 1 AND `post_status` = 1 ORDER BY post_date asc LIMIT 0,20   [ RunTime:0.0170s ]
+

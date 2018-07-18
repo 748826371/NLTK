@@ -1,0 +1,31 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="./">高校列表</a></li>
+			<li><a href="{:U('add')}">添加高校</a></li>
+		</ul>
+		<table class="table table-hover table-bordered table-list text-center">
+			<thead>
+				<tr>
+					<th width="50">ID</th>
+					<th>高校名称</th>
+					<th>URL</th>
+					<th>排名</th>
+					<th width="180">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="list" item="vo">
+				<tr>
+					<td>{$vo.coll_id}</td>
+					<td>{$vo.coll_name}</td>
+					<td><a href="{$vo['coll_url']}" title='访问' target='_blank'>{$vo['coll_url']}</a></td>
+					<td>{$vo.coll_order}</td>
+					<td><a href="{:U('update', ['id'=>$vo['coll_id']])}">修改</a><a href="{:U('Portal/AdminTerm/add', ['parent'=>3])}">添加至分类</a><a href="{:U('Admin/nav/add', ['cid'=>1])}">添加至菜单</a></td>
+				</tr>
+			</foreach>
+			</tbody>
+		</table>		
+	</div>

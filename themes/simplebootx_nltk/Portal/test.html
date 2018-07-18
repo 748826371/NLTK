@@ -1,0 +1,75 @@
+<tc_include file="Public:head"/>
+<form id="ff">
+	<!-- 搜索区域开始 -->
+	<div class="panel panel-primary">
+		<div class="panel-heading text-center">检索</div>
+		<div class="panel-body">
+			<div class="form-group">
+				<div class="col-md-1 text-right">
+					<label class="controle-label">新闻标题</label>
+				</div>
+				<div class="col-md-3">
+					<input type="text" name="title" class="form-control" value=""/>
+				</div>
+				<div class="col-md-1 text-right">
+					<label class="controle-label">关键词</label>
+				</div>
+				<div class="col-md-3">
+					<input type="text" name="keyword" class="form-control" value=""/>
+				</div>
+				<div class="col-md-4">
+					<button class="btn btn-primary btn-block" id="ts" onclick="javascript:return false">搜索</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- 搜索区域结束 -->
+</form>
+<script>
+	$('#ts').click(function(){
+		$.ajax({
+			method : 'POST',
+			url : "{:U('nltkSearch')}",
+			data : $('#ff').serialize(),
+			success : function(data) {
+				var status = data.status;
+				if(status == 1) {
+					var scope = data.info;
+					scope = eval('(' + scope + ')');
+					console.log(scope);
+					var info = scope.posts;
+					var count = info.length;
+					var page = scope.page;
+					$('.panel-heading').html(count + '条搜索结果');
+					var str = '';
+					for (var i = 0; i < info.length; i++) {
+						var temp = info[i];
+						str += '<li class="list-group-item">';
+						str += '<a href="';
+						str += 'index.php?g=portal&m=article&id=';
+						str += temp.tid;	
+						str += '" >';			
+						str +=       "<small class="+"'pull-right'>"+temp.post_date+"</small>";
+						str += temp.post_title + "</a></li>";
+					};
+					$('.list-group').html(str);	
+					console.log(page);
+					$('.pagination').html(page);					
+				} else {
+					$('.panel-heading').html('无结果');
+				}
+			},
+			type : 'JSON'
+		});
+	});
+</script>
+<!-- 搜索结果开始 -->
+<div class="panel panel-primary">
+	<div class="panel-heading text-center">xx的检索结果</div>	
+	<div class="panel-body">
+		<ul class="list-group">
+		</ul>
+		<ul class="pagination"></ul>
+	</div>
+</div>
+<!-- 搜索开始结束 -->
